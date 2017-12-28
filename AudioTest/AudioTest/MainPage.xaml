@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AudioTest"
+             xmlns:cf="clr-namespace:CocosSharp;assembly=CocosSharp.Forms"
+             x:Class="AudioTest.MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <cf:CocosSharpView x:Name="CocosView" Grid.Row="0" />
+        <Button Text="meow" HorizontalOptions="Center" Grid.Row="1" Clicked="Meow" />
+
+    </Grid>
+
+</ContentPage>
